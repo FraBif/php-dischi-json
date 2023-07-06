@@ -12,12 +12,14 @@
 </head>
 <body>
     <div id="app">
-        <header class="col-12">
-            
+        <header class="col-12 d-flex justify-start">
+            <img src="./img/spotilogo.png" alt="">
         </header>
         <main>
-
+            
         </main>
     </div>
+
+    <script src="./script/main.js"></script>
 </body>
 </html>
