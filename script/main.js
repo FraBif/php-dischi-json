@@ -4,7 +4,7 @@ createApp({
     data() {
         return {
                 apiUrl : './server.php',
-                items : [],
+                discList : [],
         }
     },
 
