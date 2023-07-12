@@ -1,29 +1,29 @@
-const { createApp } = Vue;
+const {createApp} = Vue;
 
 createApp({
-    data() {
-        return {
-                apiUrl : './server.php',
-                discList : [],
+    data(){
+        return{
+            apiUrl : './server.php',
+            discs : [],
         }
     },
-
-    methods: {
+    methods:{
         getDiscs(){
             axios.get(this.apiUrl, {
-                params: {}
-            })
-            .then((response)=> {
+                params: { }
+              })
+              .then( (response)=> {
                 console.log(response);
                 this.discs = response.data;
-            })
-            .catch(function (error) {
+              })
+              .catch(function (error) {
                 console.log(error);
-            })
+              })
         }
     },
 
-    created() {
+    created(){
         this.getDiscs();
-    },
-}).mount('#app');
+    }
+
+}).mount("#vue");
